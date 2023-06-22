@@ -3,6 +3,7 @@ include CONTRIBUTING.rst
 include CHANGELOG.rst
 include LICENSE
 include README.rst
+include plot_*.png
 
 recursive-include er_evaluation/datasets/raw_data *
 recursive-include tests *
