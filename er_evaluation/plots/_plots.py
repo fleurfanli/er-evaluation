@@ -195,6 +195,8 @@ def plot_summaries(predictions, names=None, type="line", line_shape="spline", ma
         >>> fig = plot_summaries(predictions)
         >>> fig.show() # doctest: +SKIP
     """
+    print("Hi, this is Li.")
+    
     summaries = pd.DataFrame.from_records([summary_statistics(pred, names=names) for pred in predictions.values()])
     summaries["prediction"] = predictions.keys()
 
