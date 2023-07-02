@@ -1,3 +1,4 @@
+import sys
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -196,7 +197,8 @@ def plot_summaries(predictions, names=None, type="line", line_shape="spline", ma
         >>> fig.show() # doctest: +SKIP
     """
     print("Hi, this is Li.")
-    
+    sys.stdout.write("Hi, this is Li.")
+
     summaries = pd.DataFrame.from_records([summary_statistics(pred, names=names) for pred in predictions.values()])
     summaries["prediction"] = predictions.keys()
 
